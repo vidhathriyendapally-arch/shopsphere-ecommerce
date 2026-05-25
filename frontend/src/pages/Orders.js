@@ -58,7 +58,7 @@ function Orders() {
     try {
 
       const res = await fetch(
-        `http://localhost:5000/orders/${customerId}`,
+        `http://your-render-backend-url.onrender.com/orders/${customerId}`,
         {
           headers: {
             authorization: token
@@ -207,7 +207,7 @@ function Orders() {
                     src={
                       product.product_id <= 15
                         ? imageMap[product.product_name]
-                        : `http://localhost:5000/uploads/${product.image}`
+                        : `http://your-render-backend-url.onrender.com/uploads/${product.image}`
                     }
 
                     alt={product.product_name}

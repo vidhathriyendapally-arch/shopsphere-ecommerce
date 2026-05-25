@@ -193,7 +193,7 @@ function Login() {
     try {
 
       const res = await fetch(
-        "http://localhost:5000/login",
+        "https://shopsphere-ecommerce-az26.onrender.com/login",
         {
           method: "POST",
 
@@ -345,12 +345,12 @@ function Signup() {
     try {
 
       const res = await fetch(
-        "http://localhost:5000/signup",
+        "https://shopsphere-ecommerce-az26.onrender.com/signup",
         {
           method: "POST",
 
           headers: {
-            "Content-Type":
+            "Content-Type": 
               "application/json"
           },
 

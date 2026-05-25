@@ -63,7 +63,7 @@ function Cart() {
 
       const res = await fetch(
 
-        `http://localhost:5000/cart/${customerId}`,
+        `http://your-render-backend-url.onrender.com/cart/${customerId}`,
 
         {
           headers: {
@@ -92,7 +92,7 @@ function Cart() {
 
       const res = await fetch(
 
-        `http://localhost:5000/cart/total/${customerId}`,
+        `http://your-render-backend-url.onrender.com/cart/total/${customerId}`,
 
         {
           headers: {
@@ -125,7 +125,7 @@ function Cart() {
 
       const res = await fetch(
 
-        "http://localhost:5000/cart/update",
+        "http://your-render-backend-url.onrender.com/cart/update",
 
         {
 
@@ -178,7 +178,7 @@ function Cart() {
 
       const res = await fetch(
 
-        "http://localhost:5000/order",
+        "http://your-render-backend-url.onrender.com/order",
 
         {
 
@@ -231,7 +231,7 @@ Total: ₹${finalTotal}`
 
       const res = await fetch(
 
-        `http://localhost:5000/cart/remove/${cartId}`,
+        `http://your-render-backend-url.onrender.com/cart/remove/${cartId}`,
 
         {
 
@@ -319,7 +319,7 @@ Total: ₹${finalTotal}`
                   src={
                     item.product_id <= 15
                       ? imageMap[item.product_name]
-                      : `http://localhost:5000/uploads/${item.image}`
+                      : `http://your-render-backend-url.onrender.com/uploads/${item.image}`
                   }
 
                   alt={item.product_name}

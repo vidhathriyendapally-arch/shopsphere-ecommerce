@@ -106,7 +106,7 @@ function Wishlist() {
                 src={
                   item.product_id <= 15
                     ? imageMap[item.product_name]
-                    : `http://localhost:5000/uploads/${item.image}`
+                    : `http://your-render-backend-url.onrender.com/uploads/${item.image}`
                 }
 
                 alt={item.product_name}

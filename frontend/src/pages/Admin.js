@@ -107,7 +107,8 @@ function Admin() {
       /* DASHBOARD */
 
       const dashboardRes = await fetch(
-        "http://localhost:5000/admin/dashboard"
+        
+"https://your-render-backend-url.onrender.com/admin/dashboard"
       );
 
       const dashboardData =
@@ -122,7 +123,7 @@ function Admin() {
       /* ANALYTICS */
 
       const analyticsRes = await fetch(
-        "http://localhost:5000/admin/analytics"
+        "http://your-render-backend-url.onrender.com/admin/analytics"
       );
 
       const analyticsData =
@@ -187,7 +188,7 @@ function Admin() {
       }
 
       const res = await fetch(
-        "http://localhost:5000/admin/add-product",
+        "http://your-render-backend-url.onrender.com/admin/add-product",
         {
           method: "POST",
           body: formData
@@ -222,7 +223,7 @@ function Admin() {
     try {
 
       await fetch(
-        `http://localhost:5000/admin/delete-product/${id}`,
+        `http://your-render-backend-url.onrender.com/admin/delete-product/${id}`,
         {
           method: "DELETE"
         }
@@ -453,7 +454,7 @@ function Admin() {
                         src={
                           p.product_id <= 15
                             ? imageMap[p.product_name]
-                            : `http://localhost:5000/uploads/${p.image}`
+                            : `http://your-render-backend-url.onrender.com/uploads/${p.image}`
                         }
 
                         alt={p.product_name}

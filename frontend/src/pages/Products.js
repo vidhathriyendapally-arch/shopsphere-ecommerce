@@ -34,7 +34,7 @@ function Products() {
 
   useEffect(() => {
 
-    fetch("http://localhost:5000/products")
+    fetch("http://your-render-backend-url.onrender.com/products")
 
       .then((res) => res.json())
 
@@ -141,7 +141,7 @@ function Products() {
     try {
 
       const res = await fetch(
-        "http://localhost:5000/cart/add",
+        "http://your-render-backend-url.onrender.com/cart/add",
         {
 
           method: "POST",
@@ -333,7 +333,7 @@ function Products() {
                     src={
                       p.product_id <= 15
                         ? imageMap[p.product_name]
-                        : `http://localhost:5000/uploads/${p.image}`
+                        : `http://your-render-backend-url.onrender.com/uploads/${p.image}`
                     }
 
                     alt={p.product_name}
