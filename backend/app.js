@@ -68,6 +68,11 @@ const upload = multer({ storage });
 
 
 /* SERVE IMAGES */
+app.get("/", (req, res) => {
+  res.send("ShopSphere Backend API Running 🚀");
+});
+
+
 app.listen(PORT, () => {
   console.log("Server running on port", PORT);
 });
