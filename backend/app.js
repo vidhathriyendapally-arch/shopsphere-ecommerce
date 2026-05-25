@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
 const db = require("./db");
@@ -5,6 +6,7 @@ const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const multer = require("multer");
 const path = require("path");
+const PORT = process.env.PORT || 5000;
 
 const app = express();
 
@@ -35,8 +37,7 @@ const verifyAdmin = (req, res, next) => {
     return res.status(401).send("Invalid token ❌");
   }
 };
-
-const SECRET = "secretkey";
+const SECRET = process.env.JWT_SECRET;
 /* ================= IMAGE UPLOAD ================= */
 
 
@@ -67,6 +68,9 @@ const upload = multer({ storage });
 
 
 /* SERVE IMAGES */
+app.listen(PORT, () => {
+  console.log("Server running on port", PORT);
+});
 
 app.use("/uploads", express.static("uploads"));
 
@@ -471,10 +475,6 @@ app.get("/order/:orderId", verifyToken, (req, res) => {
 
 db.query("SELECT DATABASE()", (err, result) => {
   console.log("CONNECTED DB:", result);
-});
-
-app.listen(5000, () => {
-  console.log("Server running on port 5000 🚀");
 });
 
 
