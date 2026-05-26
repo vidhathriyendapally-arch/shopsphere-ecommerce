@@ -165,7 +165,7 @@ function Cart() {
 
   /* ================= PLACE ORDER ================= */
 
-  const placeOrder = async () => {
+  const _placeOrder = async () => {
 
     if (cartItems.length === 0) {
 
@@ -262,11 +262,9 @@ Total: ₹${finalTotal}`
   };
 
   useEffect(() => {
-
-    loadCart();
-    loadTotal();
-
-  }, []);
+  loadCart();
+  loadTotal();
+}, [loadCart, loadTotal]);
 
   /* ================= BILL ================= */
 

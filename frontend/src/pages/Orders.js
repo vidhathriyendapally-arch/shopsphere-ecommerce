@@ -111,11 +111,8 @@ function Orders() {
   };
 
   useEffect(() => {
-
-    loadOrders();
-
-  }, []);
-
+  loadOrders();
+}, [loadOrders]);
   return (
 
     <div className="orders-page">

@@ -16,7 +16,7 @@ function Success() {
 
     return () => clearTimeout(timer);
 
-  }, []);
+  }, [navigate]);
 
   return (
 
