@@ -1,147 +1,172 @@
 # 🛒 ShopSphere – Full Stack E-Commerce Platform
 
-## 📌 Overview
+## 🌐 Live Links
 
-ShopSphere is a **full-stack e-commerce web application** built using **React.js, Node.js, Express.js, and MySQL**.  
-It simulates a real-world online shopping platform with complete user and admin functionality.
+### 🚀 Frontend
+https://joyful-croissant-4313e9.netlify.app/
 
-This project connects:
-- 🖥️ Frontend (React.js)
-- ⚙️ Backend (Node.js + Express.js)
-- 🗄️ Database (MySQL)
+### ⚙️ Backend API
+https://shopsphere-ecommerce-az26.onrender.com/
 
-It also includes **product image upload system, cart management, wishlist, and admin dashboard features**.
-
----
-
-## 🚀 Key Highlights
-
-- Full Stack Architecture (Frontend + Backend + Database)
-- MySQL database integration for all data storage
-- Admin dashboard for product management
-- Image upload system using Multer
-- REST API-based backend communication
-- Responsive UI for all devices
-- Real-world e-commerce workflow simulation
+### 💻 GitHub Repository
+https://github.com/vidhathriyendapally-arch/shopsphere-ecommerce
 
 ---
 
-## ✨ Features
+# 📌 Overview
 
-### 👤 User Side
-- Browse products with search & category filters
-- Add products to wishlist ❤️
-- Add products to cart 🛒
-- Place orders
-- View product details
-- Responsive UI for mobile & desktop
+ShopSphere is a full stack e-commerce web application built using:
 
-### 🛠️ Admin Side
-- Add new products with image upload
-- Delete products
-- Manage inventory
-- View dashboard statistics:
-  - Total users
-  - Total orders
-  - Total revenue
-- Product management system
+- React.js
+- Node.js
+- Express.js
+- MySQL
 
----
+The project includes:
+- User authentication
+- Product management
+- Cart & wishlist system
+- Order management
+- Admin dashboard
+- Product image uploads
+- REST API integration
 
-## 🖼️ Image Upload System
+This project connects: 
+-🖥️ Frontend (React.js) 
+-⚙️ Backend (Node.js + Express.js) 
+-🗄️ Database (MySQL)
 
-- Admin uploads product images directly from dashboard
-- Images stored in backend `/uploads` folder
-- Images retrieved dynamically in frontend
-- Fallback image system for missing images
-- Fully integrated with MySQL product records
+Frontend is deployed on **Netlify**, backend on **Render**, and database on **Railway MySQL**.
 
 ---
 
-## 🏗️ Tech Stack
+# ✨ Features
 
-### Frontend
+## 👤 User Features
+- Browse Products
+- Add to Cart
+- Wishlist ❤️
+- Place Orders
+- Responsive UI
+
+## 🛠️ Admin Features
+- Add/Delete Products
+- Upload Product Images
+- Dashboard Analytics
+- Inventory Management
+
+---
+
+# 🖼️ Image Upload System
+
+- Implemented using **Multer**
+- Images stored in `/uploads`
+- Dynamically rendered in frontend
+- Connected with MySQL product records
+
+---
+
+# 🏗️ Tech Stack
+
+## Frontend
 - React.js
 - HTML5
 - CSS3
-- React Toastify
+- Axios
 
-### Backend
+## Backend
 - Node.js
 - Express.js
-- Multer (file uploads)
-- REST API development
+- Multer
+- REST APIs
 
-### Database
-- MySQL (Relational Database Management System)
-
----
-
-## 🔗 System Architecture
-
-Frontend (React.js)
-        ↓
-Backend (Node.js + Express.js)
-        ↓
-MySQL Database
-        ↓
-File Upload System (Multer - Images)
+## Database
+- MySQL (Railway)
 
 ---
 
-## 📂 Project Structure
+# ⚙️ Environment Variables
 
+```env
+PORT=5000
+
+DB_HOST=zephyr.proxy.rlwy.net
+DB_PORT=24603
+DB_USER=root
+DB_PASSWORD=GRRvLGavWNZxoDESnMGKmwlydjiNUNoz
+DB_NAME=railway
+```
+
+---
+
+# 🔐 Admin Access
+
+```text
+Email: admin@shopsphere.com
+Password: yourpassword
+```
+
+---
+
+# 📂 Project Structure
+
+```text
 shop-sphere/
 │
-├── frontend/ # React Frontend (UI)
-├── backend/ # Node.js + Express Backend (APIs)
-├── uploads/ # Product Images Storage
-└── database/ # MySQL Database Schema
+├── frontend/
+├── backend/
+├── images/
+└── README.md
+```
 
 ---
 
-## ⚙️ Installation & Setup
+# ⚙️ Setup
 
-### 1️⃣ Clone Repository
+## Backend
+
 ```bash
-git clone https://github.com/your-username/shopsphere.git
-
-2️⃣ Backend Setup
-
 cd backend
 npm install
 node app.js
+```
 
-3️⃣ Frontend Setup
+## Frontend
+
+```bash
 cd frontend
 npm install
 npm start
+```
 
-🗄️ Database Tables
-users
-products
-cart
-orders
-order_items
-wishlist
-reviews
-inventory
+---
 
-All data is stored and managed using MySQL relational database system 
+# 🚀 Deployment
 
-📈 Future Improvements
-Payment gateway integration (Razorpay / Stripe)
-Advanced analytics dashboard with graphs
-Cloud image storage (AWS S3 / Cloudinary)
-JWT authentication system upgrade
-Real-time order tracking system
-Email notifications for orders
-👨‍💻 Developer
+- Frontend → Netlify
+- Backend → Render
+- Database → Railway MySQL
 
-Full Stack Developer
-Project: ShopSphere E-Commerce Platform
-Stack: React + Node + Express + MySQL
+---
 
-⭐ Summary
+# 📈 Future Improvements
 
-ShopSphere is a complete end-to-end full-stack e-commerce system that demonstrates real-world development skills including frontend UI design, backend API development, database integration, and file handling system
+- Razorpay Integration
+- Cloudinary Image Storage
+- Product Filters & Search
+- Real-Time Order Tracking
+
+---
+
+# 👨‍💻 Developer
+
+### ShopSphere – Full Stack E-Commerce Platform
+
+Built using:
+React.js • Node.js • Express.js • MySQL
+
+---
+
+# ⭐ Resume Description
+
+Developed a full stack e-commerce platform using React.js, Node.js, Express.js, and MySQL with features including authentication, admin dashboard, cart system, order management, and image uploads. Deployed frontend on Netlify, backend on Render, and database on Railway
