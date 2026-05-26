@@ -53,7 +53,7 @@ function Payment() {
         localStorage.getItem("customer_id");
 
       const res = await fetch(
-        "https://your-render-backend-url.onrender.com/order",
+        "https://shopsphere-ecommerce-az26.onrender.com/order",
         {
           method: "POST",
 

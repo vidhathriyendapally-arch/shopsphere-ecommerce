@@ -108,7 +108,7 @@ function Admin() {
 
       const dashboardRes = await fetch(
         
-"https://your-render-backend-url.onrender.com/admin/dashboard"
+"https://shopsphere-ecommerce-az26.onrender.com/admin/dashboard"
       );
 
       const dashboardData =
@@ -123,7 +123,7 @@ function Admin() {
       /* ANALYTICS */
 
       const analyticsRes = await fetch(
-        "https://your-render-backend-url.onrender.com/admin/analytics"
+        "https://shopsphere-ecommerce-az26.onrender.com/admin/analytics"
       );
 
       const analyticsData =
@@ -188,7 +188,7 @@ function Admin() {
       }
 
       const res = await fetch(
-        "https://your-render-backend-url.onrender.com/admin/add-product",
+        "https://shopsphere-ecommerce-az26.onrender.com/admin/add-product",
         {
           method: "POST",
           body: formData
@@ -223,7 +223,7 @@ function Admin() {
     try {
 
       await fetch(
-        `https://your-render-backend-url.onrender.com/admin/delete-product/${id}`,
+        `https://shopsphere-ecommerce-az26.onrender.com/admin/delete-product/${id}`,
         {
           method: "DELETE"
         }
@@ -454,7 +454,7 @@ function Admin() {
                         src={
                           p.product_id <= 15
                             ? imageMap[p.product_name]
-                            : `https://your-render-backend-url.onrender.com/uploads/${p.image}`
+                            : `https://shopsphere-ecommerce-az26.onrender.com/uploads/${p.image}`
                         }
 
                         alt={p.product_name}

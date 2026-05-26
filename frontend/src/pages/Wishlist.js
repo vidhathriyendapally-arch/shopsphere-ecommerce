@@ -106,7 +106,7 @@ function Wishlist() {
                 src={
                   item.product_id <= 15
                     ? imageMap[item.product_name]
-                    : `https://your-render-backend-url.onrender.com/uploads/${item.image}`
+                    : `https://shopsphere-ecommerce-az26.onrender.com/uploads/${item.image}`
                 }
 
                 alt={item.product_name}

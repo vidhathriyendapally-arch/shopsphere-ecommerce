@@ -34,7 +34,7 @@ function Products() {
 
   useEffect(() => {
 
-    fetch("https://your-render-backend-url.onrender.com/products")
+    fetch("https://shopsphere-ecommerce-az26.onrender.com/products")
 
       .then((res) => res.json())
 
@@ -141,7 +141,7 @@ function Products() {
     try {
 
       const res = await fetch(
-        "https://your-render-backend-url.onrender.com/cart/add",
+        "https://shopsphere-ecommerce-az26.onrender.com/cart/add",
         {
 
           method: "POST",
@@ -333,7 +333,7 @@ function Products() {
                     src={
                       p.product_id <= 15
                         ? imageMap[p.product_name]
-                        : `https://your-render-backend-url.onrender.com/uploads/${p.image}`
+                        : `https://shopsphere-ecommerce-az26.onrender.com/uploads/${p.image}`
                     }
 
                     alt={p.product_name}
