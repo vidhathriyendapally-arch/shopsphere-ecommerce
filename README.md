@@ -93,7 +93,7 @@ PORT=5000
 DB_HOST=zephyr.proxy.rlwy.net
 DB_PORT=24603
 DB_USER=root
-DB_PASSWORD=GRRvLGavWNZxoDESnMGKmwlydjiNUNoz
+DB_PASSWORD=(private)
 DB_NAME=railway
 ```
 
